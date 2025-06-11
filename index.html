@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMT Racket</title>
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <!-- swiper-js link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">Yonex</a>
+        </div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#racquets">Racquets</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-shopping-cart" id="cart-icon" title="View Cart"></i>
+            <span id="cart-count">0</span>
+            <i class="fas fa-bars"></i>
+            <button id="clear-cart">Clear Cart</button>
+        </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+<div class="swiper mySwiper">
+        <div class="home-section swiper-wrapper">
+            <div class="home-row home-1 swiper-slide">
+                <div class="home-text">
+                    <h1>Astrox 100zz</h1>
+                    <p>A stiff, high-density vibration-dampening material featured in the upper half of the frame,<br>allowing players to hit with a solid feel and power.<br>(RM1200)</p> 
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('astrox100zz')">Order now!</a>
+                </div>
+                <div class="home-img">
+                    <img src="image/100zz2.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="home-row home-1 swiper-slide">
+                <div class="home-text">
+                    <h1>Astrox 77pro</h1>
+                    <p>Designed to slice through the air, generating speedy power.<br>(RM1009)</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('astrox77pro')">Order now!</a>
+                </div>
+                <div class="home-img">
+                    <img src="image/77pro3.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="home-row home-1 swiper-slide">
+                <div class="home-text">
+                    <h1>Astrox 88Dpro</h1>
+                    <p>Lightweight fibers that withstand immense forces while absorbing unwanted shock and vibrations.<br>(RM1100)</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('astrox88Dpro')">Order now!</a>
+                </div>
+                <div class="home-img">
+                    <img src="image/88D2.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </section>
+
+
+    <!-- racquets-section -->
+
+    <section class="racquets" id="racquets">
+        <div class="head">
+            <h2>Racquet</h2>
+        </div>
+
+        <div class="racquets-content">
+            <div class="racquets-row card">
+                <img src="image/arcsaber 11 pro.png" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquet arc11p</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM989</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('arcsaber-11')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="arcsaber-11"></i>
+                </div>
+            </div>
+
+            <div class="racquets-row card">
+                <img src="image/arc7p.jpg" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquet arc7p</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM889</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('arc7p')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="arc7p"></i>
+                </div>
+            </div>
+            <div class="racquets-row card">
+                <img src="image/nanoflare170.jpg" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquet nano170</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM899</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('nanoflare170')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="nanoflare170"></i>
+                </div>
+            </div>
+            <div class="racquets-row card">
+                <img src="image/nanoflare700-1.jpg" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquet na800</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM699</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('nanoflare800')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="nanoflare800"></i>
+                </div>
+            </div>
+            <div class="racquets-row card">
+                <img src="image/700pro.png" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquets 700p</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM1000</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('700pro')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="700pro"></i>
+                </div>
+            </div>
+            <div class="racquets-row card">
+                <img src="image/nanoflex700.jpg" alt="">
+
+                <div class="racquets-col">
+                    <h3 class="card-title">Racquet nano700</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="racquets-icon">
+                    <p>RM666</p>
+                    <a href="javascript:void(0);" class="btn" onclick="orderProductAndOpenPayment('nanoflex700')">Order now!</a>
+                    <i class="fas fa-shopping-cart add-to-cart" data-product-id="nanoflex700"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- about-section -->
+
+    <section class="about" id="about">
+        <div class="head">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-img">
+                <img src="image/history2.jpg" alt="">
+            </div>
+
+            <div class="about-text">
+                <h2>Know more about our history</h2>
+                <p>In 1976, Yonex introduced the first-ever carbon graphite badminton racquet, the CARBONEX 3.<br> 
+                   By pushing the boundaries of physics and chemistry to create new materials, racquets are now as light and maneuverable as the NANOFLARE 800LT.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="head">
+            <h2>Customers</h2>
+        </div>
+
+        <div class="customers swiper myswiper">
+            <div class="swiper-wrapper">
+            <div class="customer swiper-slide">
+                <img src="image/asian.png" alt="">
+                <div class="text">
+                    <h3>Mei Ling</h3>
+                    <p>Really headlight. Feels very nice. The weight without string is accurately 4U at 83gm. </p>
+                </div>
+            </div>
+
+            <div class="customers swiper-slide">
+                <img src="image/asian2.png" alt="">
+                <div class="text">
+                    <h3>Jayden</h3>
+                    <p>Absolutely love shopping here! The quality of the badminton gear is top-notch, and the selection is impressive.</p>
+                </div>
+            </div>
+
+            <div class="customers swiper-slide">
+                <img src="image/people4.png" alt="">
+                <div class="text">
+                    <h3>Xiao Mei</h3>
+                    <p>Fantastic selection of badminton gear! The rackets are high-quality.</p>
+                </div>
+            </div>
+
+            <div class="customers swiper-slide">
+                <img src="image/asian3.png" alt="">
+                <div class="text">
+                    <h3>Xiao Shuai</h3>
+                    <p>Great store for badminton enthusiasts!The prices are reasonable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+            <div class="payment" id="paymentPopup" style="display: none;">
+                <h1 class="payTitle">Personal Information</h1>
+                <form action="data.php" method="POST">
+                    <label>Name and Surname</label>
+                    <input type="text" name="name" placeholder="John" class="payInput">
+                    <br>
+                    <input type="hidden" name="cart_data" id="cart-data">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" placeholder="+6012 123 456" class="payInput" maxlength="13">
+                    <br>
+                    <label>Address</label>
+                    <input type="text" name="address" placeholder="Taman Kun Ge" class="payInput">
+                    <br>
+                    <h1 class="payTitle">Card Information</h1>
+                    <div class="cardIcons">
+                        <img src="image/visa.png" width="40" alt="" class="cardIcon">
+                        <img src="image/master.png" alt="" width="80" class="cardIcon">
+                        <img src="image/affin.png" alt="" width="50" class="cardIcon">
+                    </div>
+                    <input type="text" name="card_number" class="payInput" placeholder="Card Number" maxlength="16">
+                    <div class="cardInfo">
+                        <input type="text" name ="expiry_month" placeholder="mm" class="payInput sm" maxlength="2">
+                        <input type="text" name ="expiry_year" placeholder="yyyy" class="payInput sm" maxlength="4">
+                        <input type="text" name ="cvv" placeholder="cvv" class="payInput sm">
+                    </div>
+                    <button type="submit" class="payButton">Checkout</button>
+                    <span class="close">X</span>
+                </form>
+            </div>
+        </div>
+
+
+    <!-- contact-section -->
+    <section class="contact" id="contact">
+        <div class="head">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>yuen@gmail.com <i class="fas fa-envelope"></i></p>
+                <p>60+11109114 <i class="fas fa-phone"></i></p>
+                <p>Pulau Pinang, Malaysia <i class="fas fa-location-dot"></i></p>
+            </div>
+        
+
+        <form action="sendMessage.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name here..." required>
+            <input type="email" name="email" placeholder="Enter your email here..." required>
+            <textarea name="message" placeholder="Enter your message here..." required></textarea>
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    </section>
+
+
+    <!-- footer-section -->
+<section class="footer">
+    <div class="logo f-logo">
+        <a href="#">Yonex</a>
+        <p>Yonex's badminton racquets offer features like wider sweet spots<br> improved power, and increased flexibility.</p>
+    </div>
+
+    <div class="footer-content">
+        <div class="f-head">
+            <h3>Follow Us</h3>
+            <div class="follow-us f-info">
+                <img src="image/fb2.png"  alt="">
+                <img src="image/tik1.png" alt="">
+                <img src="image/ig1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="f-head">
+            <h3>About us</h3>
+            <div class="about-us f-info">
+                <a href="#">Company</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact us</a>
+                <a href="#">Blog</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="f-head">
+            <h3>Useful links</h3>
+            <div class="useful-links f-info">
+                <a href="#">Feedback</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <span class="copyright">© 2024 BMT Racket All rights reserved.</span>
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
